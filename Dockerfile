@@ -10,4 +10,4 @@ RUN groupmod -g 1000 mysql
 RUN chown -R mysql:mysql /var/run/mysqld
 RUN chown -R mysql:mysql /var/log/mysql
 
-COPY onfig/mysql/my.cnf /etc/mysql/conf.d/
+COPY ./config/mysql/my.cnf /etc/mysql/conf.d/
