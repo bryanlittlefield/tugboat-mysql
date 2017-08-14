@@ -1,7 +1,7 @@
 # ============================
 # PULL OFFICIAL MYSQL REPO
 # ============================
-FROM mysql:5.7
+FROM mysql:latest
 
 # Fix permissions
 RUN usermod -u 1000 mysql
