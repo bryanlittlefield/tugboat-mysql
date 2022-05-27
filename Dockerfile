@@ -7,4 +7,6 @@ FROM mysql:8.0
 RUN usermod -u 1000 mysql
 RUN groupmod -g 1000 mysql
 
+RUN chown -R mysql:mysql /var/run/mysqld
+
 COPY config/my.cnf /etc/mysql/conf.d/
